@@ -7,7 +7,7 @@ objective.AlwaysActive = true
 objective.DontLooseLives = true
 
 function objective:Start()
-    self.Text = "Turn yourself into a husk."
+    self.Text = "Настало время возвышение! Преврати же себя в Хаска!."
 
     self.OldCharacter = self.Character
 

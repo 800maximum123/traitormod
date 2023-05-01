@@ -42,7 +42,7 @@ end
 
 category.Products = {
     {
-        Name = "Calyx Extract",
+        Name = "Экстракт Каликса",
         Price = 50,
         Limit = 8,
         IsLimitGlobal = false,
@@ -50,7 +50,7 @@ category.Products = {
     },
 
     {
-        Name = "Husk Stinger",
+        Name = "Жало Хаска",
         Price = 100,
         Limit = 4,
         IsLimitGlobal = false,
@@ -58,7 +58,7 @@ category.Products = {
     },
 
     {
-        Name = "Husk Auto-Injector",
+        Name = "Автоинъектор Каликса",
         Price = 500,
         Limit = 1,
         IsLimitGlobal = false,

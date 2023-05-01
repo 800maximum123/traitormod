@@ -1,6 +1,6 @@
 local category = {}
 
-category.Name = "Traitor"
+category.Name = "Аплинк"
 category.Decoration = "clown"
 category.FadeToBlack = true
 
@@ -30,7 +30,7 @@ end)
 
 category.Products = {
     {
-        Name = "Explosive Auto-Injector",
+        Name = "Автоинъектор с взрывчаткой",
         Price = 2500,
         Limit = 1,
         IsLimitGlobal = false,
@@ -40,7 +40,7 @@ category.Products = {
             Entity.Spawner.AddItemToSpawnQueue(prefabInjector, client.Character.Inventory, nil, nil, function (item)
                 Entity.Spawner.AddItemToSpawnQueue(prefabUEX, client.Character.Inventory, nil, nil, function (item2)
                     item2.Tags = "medical"
-                    item2.Description = "A modified UEX that can be put inside an Auto-Injector headset."
+                    item2.Description = "Модифицированный UES, что может быть помещен внутри наушника с Автоинъектором."
                     item2.set_InventoryIconColor(Color(0, 0, 255))
                     item2.SpriteColor = Color(0, 0, 255, 255)
 
@@ -54,7 +54,7 @@ category.Products = {
     },
 
     {
-        Name = "Invisible Suit (protip: hide your id card and keep your health full)",
+        Name = "Стелс костюм (совет про: спрячь свою айди карту и храни свое ХП полным)",
         Price = 800,
         Limit = 1,
         IsLimitGlobal = false,
@@ -81,7 +81,7 @@ category.Products = {
     },
 
     {
-        Name = "Teleporter Revolver",
+        Name = "Револьвер-телепоратор",
         Price = 1800,
         Limit = 1,
         IsLimitGlobal = false,
@@ -89,7 +89,7 @@ category.Products = {
             local revolver = ItemPrefab.GetItemPrefab("revolver")
             Entity.Spawner.AddItemToSpawnQueue(revolver, client.Character.Inventory, nil, nil, function (item)
                 item.Tags = "teleporter"
-                item.Description = "‖color:gui.red‖A special revolver with teleportation features...‖color:end‖"
+                item.Description = "‖color:gui.red‖Специальный револьвер с функцией телепорта...‖color:end‖"
 
                 item.set_InventoryIconColor(Color(0, 0, 255, 255))
                 item.SpriteColor = Color(0, 0, 255, 255)
@@ -107,7 +107,7 @@ category.Products = {
     },
 
     {
-        Name = "Boom Stick",
+        Name = "Бум палка",
         Price = 3200,
         Limit = 1,
         IsLimitGlobal = false,
@@ -116,7 +116,7 @@ category.Products = {
     },
 
     {
-        Name = "Shotgun Shell (x8)",
+        Name = "Патроны для Дробовика (x8)",
         Price = 320,
         Limit = 5,
         IsLimitGlobal = false,
@@ -124,7 +124,7 @@ category.Products = {
     },
 
     {
-        Name = "Deadeye Carbine",
+        Name = "Меткий карабин",
         Price = 2900,
         Limit = 1,
         IsLimitGlobal = false,
@@ -132,7 +132,7 @@ category.Products = {
     },
 
     {
-        Name = "SMG Magazine",
+        Name = "Магазин для СМГ",
         Price = 250,
         Limit = 5,
         IsLimitGlobal = false,
@@ -140,7 +140,7 @@ category.Products = {
     },
 
     {
-        Name = "Prototype Steam Cannon",
+        Name = "Прототип паровоой пушки",
         Price = 1300,
         Limit = 1,
         IsLimitGlobal = false,
@@ -148,7 +148,7 @@ category.Products = {
     },
 
     {
-        Name = "Detonator",
+        Name = "Детонатор",
         Price = 950,
         Limit = 3,
         IsLimitGlobal = false,
@@ -164,7 +164,7 @@ category.Products = {
     },
 
     {
-        Name = "Stun Grenade",
+        Name = "Светошумовая граната",
         Price = 600,
         Limit = 3,
         IsLimitGlobal = false,
@@ -172,7 +172,7 @@ category.Products = {
     },
 
     {
-        Name = "Mutated Pomegrenade",
+        Name = "Мутировавший взрывной гранат",
         Price = 530,
         Limit = 3,
         IsLimitGlobal = false,
@@ -180,7 +180,7 @@ category.Products = {
     },
 
     {
-        Name = "Turn Off Lights For 3 Minutes",
+        Name = "Отключить свет на 3 минуты",
         Price = 350,
         Limit = 1,
         IsLimitGlobal = true,
@@ -195,7 +195,7 @@ category.Products = {
     },
 
     {
-        Name = "Turn Off Communications For 2 Minutes",
+        Name = "Отключить телекоммуникации на 2 минуты",
         Price = 400,
         Limit = 1,
         IsLimitGlobal = true,

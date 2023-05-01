@@ -26,7 +26,7 @@ function objective:Start(target)
     end
     self.Type = types[math.random(1, #types)]
 
-    self.Text = string.format("Kill %s %s.", self.Monsters[self.Type].Amount, self.Monsters[self.Type].Text)
+    self.Text = string.format("Убейте %s %s.", self.Monsters[self.Type].Amount, self.Monsters[self.Type].Text)
 
     self.Progress = 0
 
@@ -37,7 +37,7 @@ function objective:CharacterDeath(character)
     if character.SpeciesName.Value == self.Type then
         if character.CauseOfDeath and character.CauseOfDeath.Killer == self.Character then
             self.Progress = self.Progress + 1
-            self.Text = string.format("Kill (%s/%s) %s.", self.Progress, self.Monsters[self.Type].Amount, self.Monsters[self.Type].Text)
+            self.Text = string.format("Убейте (%s/%s) %s.", self.Progress, self.Monsters[self.Type].Amount, self.Monsters[self.Type].Text)
         end
     end
 end

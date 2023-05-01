@@ -4,98 +4,98 @@ category.Name = "Materials"
 
 category.Products = {
     {
-        Name = "Aluminhum",
+        Name = "Алюминий",
         Price = 120,
         Limit = 4,
         Items = {"aluminum"}
     },
 
     {
-        Name = "Steel Bar",
+        Name = "Стальной слиток",
         Price = 60,
         Limit = 4,
         Items = {"steel"}
     },
 
     {
-        Name = "Iron",
+        Name = "Железо",
         Price = 35,
         Limit = 4,
         Items = {"iron"}
     },
 
     {
-        Name = "Plastic",
+        Name = "Пластик",
         Price = 160,
         Limit = 4,
         Items = {"plastic"}
     },
 
     {
-        Name = "Rubber",
+        Name = "Резина",
         Price = 170,
         Limit = 4,
         Items = {"rubber"}
     },
 
     {
-        Name = "Copper",
+        Name = "Медь",
         Price = 90,
         Limit = 4,
         Items = {"copper"}
     },
 
     {
-        Name = "Tin Curry",
+        Name = "Олово",
         Price = 110,
         Limit = 4,
         Items = {"tin"}
     },
 
     {
-        Name = "Carbon",
+        Name = "Углерод",
         Price = 50,
         Limit = 4,
         Items = {"carbon"}
     },
 
     {
-        Name = "Lead",
+        Name = "Свинец",
         Price = 80,
         Limit = 4,
         Items = {"lead"}
     },
 
     {
-        Name = "Titanium",
+        Name = "Титан",
         Price = 100,
         Limit = 4,
         Items = {"titanium"}
     },
 
     {
-        Name = "Silicon",
+        Name = "Кремний",
         Price = 90,
         Limit = 4,
         Items = {"silicon"}
     },
 
     {
-        Name = "Scrap",
+        Name = "Металлолом",
         Price = 95,
         Limit = 6,
         Items = {"scrap"}
     },
 
     {
-        Name = "Fulgurium",
+        Name = "Воспламенит",
         Price = 180,
         Limit = 4,
         Items = {"fulgurium"}
     },
 
     {
-        Name = "Physicorium",
+        Name = "Физикориум",
         Price = 200,
         Limit = 4,
         Items = {"physicorium"}

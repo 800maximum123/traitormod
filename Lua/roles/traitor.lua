@@ -148,27 +148,27 @@ function role:Greet()
     local primary, secondary = self:ObjectivesToString()
 
     local sb = Traitormod.StringBuilder:new()
-    sb("You are a traitor!\n\n")
-    sb("Your main objectives are:\n")
+    sb("Ты предатель!\n\n")
+    sb("Твои основные задачи:\n")
     sb(primary)
-    sb("\n\nYour secondary objectives are:\n")
+    sb("\n\nТвои дополнительные задачи:\n")
     sb(secondary)
     sb("\n\n")
     if #traitors < 2 then
-        sb("You are the only traitor.")
+        sb("Ты единственный оперативник на борту.")
     elseif self.TraitorMethodCommunication == "Names" then
-        sb("Partners: %s\n", partners)
+        sb("Напарники: %s\n", partners)
 
         if self.TraitorBroadcast then
-            sb("Use !tc to communicate with your partners.")
+            sb("Используй !tc для общения по внутренней частоте.")
         end
     elseif self.TraitorMethodCommunication == "Codewords" then
-        sb("Use code words the find your partners\n")
-        sb("Code Words: ")
+        sb("Используй кодовые слова для общения с напарниками\n")
+        sb("Зов: ")
         for key, value in pairs(Traitormod.CodeWords[1]) do
             sb("\"%s\" ", value)
         end
-        sb("\nCode Responses: ")
+        sb("\nОтклик: ")
         for key, value in pairs(Traitormod.CodeWords[2]) do
             sb("\"%s\" ", value)
         end
@@ -180,10 +180,10 @@ end
 function role:OtherGreet()
     local sb = Traitormod.StringBuilder:new()
     local primary, secondary = self:ObjectivesToString()
-    sb("Traitor %s.", self.Character.Name)
-    sb("\nTheir main objectives were:\n")
+    sb("Предатель %s.", self.Character.Name)
+    sb("\n Их основные задачи:\n")
     sb(primary)
-    sb("\nTheir secondary objectives were:\n")
+    sb("\n Их дополнительные задачиe:\n")
     sb(secondary)
     return sb:concat()
 end

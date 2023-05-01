@@ -147,19 +147,19 @@ function role:Greet()
     local primary, secondary = self:ObjectivesToString()
 
     local sb = Traitormod.StringBuilder:new()
-    sb("You are a Husk Cultist!\nHumans that you manage to turn into a husk will be in your side and may help you.\n\n")
-    sb("Your main objectives are:\n")
+    sb("Ты культист Церкви Хаска!\nЛюди что могут помочь превратить тебя в Хаска могут быть по обе стороны барикад.\n\n")
+    sb("Твои основные задачи:\n")
     sb(primary)
-    sb("\n\nYour secondary objectives are:\n")
+    sb("\n\nТвои дополнительные задачи:\n")
     sb(secondary)
     sb("\n\n")
     if #traitors < 2 then
-        sb("You are the only Husk Cultist.")
+        sb("Ты единственный культист Церкви Хаска на борту.")
     else
-        sb("Partners: %s\n", partners)
+        sb("Твой собрат: %s\n", partners)
 
         if self.TraitorBroadcast then
-            sb("Use !tc to communicate with your partners.")
+            sb("Используй !tc для того чтобы общатся с твоим партнером.")
         end
     end
     
@@ -169,10 +169,10 @@ end
 function role:OtherGreet()
     local sb = Traitormod.StringBuilder:new()
     local primary, secondary = self:ObjectivesToString()
-    sb("Husk Cultist %s.", self.Character.Name)
-    sb("\nTheir main objectives were:\n")
+    sb("Культисты Церкви Хаска %s.", self.Character.Name)
+    sb("\nИх основные задачи:\n")
     sb(primary)
-    sb("\nTheir secondary objectives were:\n")
+    sb("\nИх дополнительные задачи:\n")
     sb(secondary)
     return sb:concat()
 end

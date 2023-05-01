@@ -8,11 +8,11 @@ config.ChatMessageType = ChatMessageType.Private    -- Error = red | Private = g
 
 ----- GAMEPLAY -----
 config.Codewords = {
-    "hull", "tabacco", "nonsense", "fish", "clown", "quartermaster", "fast", "possibility",
-	"thalamus", "hungry", "water", "looks", "renegade", "angry", "green", "sink", "rubber",
-	"mask", "sweet", "ice", "charybdis", "cult", "secret", "frequency",
-	"husk", "rust", "ruins", "red", "boat", "cats", "rats", "blast",
-	"tire", "trunk", "weapons", "threshers", "cargo", "method", "monkey"
+    "корпус", "табак", "ерунда", "рыба", "клоун", "навигатор", "быстро", "возможность",
+	"таламус", "голодный", "вода", "вид", "ренегат", "злой", "зеленый", "тонуть", "резина",
+	"маска", "сладкий", "лед", "Харибда", "культ", "секрет", "частота",
+	"шелуха", "ржавчина", "руины", "красный", "лодка", "кошки", "крысы", "взрыв",
+	"шина", "ствол", "оружие", "костоломы", "груз", "метод", "обезьяна"
 }
 
 config.AmountCodeWords = 2
@@ -109,11 +109,11 @@ config.GamemodeConfig = {
             if amountPlayers > 7 then return 2 end            
             if amountPlayers > 3 then return 1 end
             if amountPlayers == 1 then 
-                Traitormod.SendMessageEveryone("1P testing mode - no points can be gained or lost") 
+                Traitormod.SendMessageEveryone("1P тестировочный режим - поинты не могут быть выданы или потеряны") 
                 config.TestMode = true
                 return 1
             end
-            print("Not enough players to start traitor mode.")
+            print("Недостаточно людей чтобы начать игру.")
             return 0
         end,
 

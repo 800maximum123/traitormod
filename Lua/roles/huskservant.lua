@@ -23,12 +23,12 @@ function role:Greet()
     partners = partners:concat(" ")
 
     local sb = Traitormod.StringBuilder:new()
-    sb("You are now a Husk Servant!\nYou directly follow orders made by the Husk Cultists.\n")
+    sb("Ты послушник Церкви Хаска!\nТы напрямую выполняешь приказы культистов Хаска..\n")
 
-    sb("Husk Cultists: %s\n", partners)
+    sb("Культисты Церкви Хаска: %s\n", partners)
 
     if self.TraitorBroadcast then
-        sb("\n\nYou cannot speak, but you can use !tc to communicate with the Husk Cultists.")
+        sb("\n\nТы не можешь говорить, но тебе не нужно. Великий Червь даровал тебе иной способ общения. Используй !tc дабы общаться с Культистами Церкви Хаска.")
     end
 
     return sb:concat()
@@ -36,7 +36,7 @@ end
 
 function role:OtherGreet()
     local sb = Traitormod.StringBuilder:new()
-    sb("Husk Servant %s.", self.Character.Name)
+    sb("Послушник Церкви Хаска: %s.", self.Character.Name)
     return sb:concat()
 end
 

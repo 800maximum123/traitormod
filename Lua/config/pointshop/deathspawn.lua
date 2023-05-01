@@ -1,6 +1,6 @@
 local category = {}
 
-category.Name = "Death Spawn"
+category.Name = "Возрождение"
 category.Decoration = "huskinvite"
 
 category.CanAccess = function(client)
@@ -39,7 +39,7 @@ local function SpawnCreature(species, client, insideHuman)
         -- no waypoints? https://c.tenor.com/RgExaLgYIScAAAAC/megamind-megamind-meme.gif
         spawnPosition = Submarine.MainSub.WorldPosition -- spawn it in the middle of the sub
 
-        Traitormod.Log("Couldnt find any good waypoints, spawning in the middle of the sub.")
+        Traitormod.Log("Не могу найти хороших вейпоинтов. СПАВНИМ В ЦЕНТРЕ СУБМАРИНЫ!")
     else
         spawnPosition = spawnPositions[math.random(#spawnPositions)]
     end
@@ -51,7 +51,7 @@ end
 
 category.Products = {
     {
-        Name = "Spawn as Crawler",
+        Name = "Появится как Ползун",
         Price = 400,
         Limit = 4,
         IsLimitGlobal = true,
@@ -64,7 +64,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Legacy Crawler",
+        Name = "Появится как Ползун(Старый)",
         Price = 400,
         Limit = 4,
         IsLimitGlobal = true,
@@ -77,7 +77,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Legacy Husk",
+        Name = "Появится как Хаск(Старый)",
         Price = 450,
         Limit = 5,
         IsLimitGlobal = true,
@@ -90,7 +90,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Crawler Baby",
+        Name = "Появится как ребенок Ползуна",
         Price = 250,
         Limit = 4,
         IsLimitGlobal = true,
@@ -103,7 +103,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Mudraptor Baby",
+        Name = "Появится как ребенок Грязевого Раптора",
         Price = 400,
         Limit = 5,
         IsLimitGlobal = true,
@@ -116,7 +116,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Thresher Baby",
+        Name = "Появится как ребенок Акульего Тигра",
         Price = 700,
         Limit = 5,
         IsLimitGlobal = true,
@@ -129,7 +129,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Spineling",
+        Name = "Появится как Шипостай",
         Price = 1000,
         Limit = 1,
         IsLimitGlobal = true,
@@ -142,7 +142,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Mudraptor",
+        Name = "Появится как Грязевой Раптор",
         Price = 1000,
         Limit = 3,
         IsLimitGlobal = true,
@@ -155,7 +155,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Mantis",
+        Name = "Появится как Креветка",
         Price = 1100,
         Limit = 2,
         IsLimitGlobal = true,
@@ -168,7 +168,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Husk",
+        Name = "Появится как Хаск",
         Price = 1800,
         Limit = 2,
         IsLimitGlobal = true,
@@ -181,7 +181,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Bone Thresher",
+        Name = "Появится как Костолом",
         Price = 1800,
         Limit = 2,
         IsLimitGlobal = true,
@@ -195,7 +195,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Tiger Thresher",
+        Name = "Появится как Акулий Тигр",
         Price = 2500,
         Limit = 2,
         IsLimitGlobal = true,
@@ -209,7 +209,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Legacy Moloch (Horrible)",
+        Name = "Появится как Молох (УжасныЙ, старый)",
         Price = 2500,
         Limit = 1,
         IsLimitGlobal = true,
@@ -220,24 +220,10 @@ category.Products = {
         Action = function (client, product, items)
             SpawnCreature("legacymoloch", client)
         end
-    },
+    },  
 
     {
-        Name = "Spawn as Legacy Carrier (Horrible)",
-        Price = 500,
-        Limit = 1,
-        IsLimitGlobal = true,
-        PricePerLimit = 500,
-        Enabled = true,
-        Timeout = 60,
-
-        Action = function (client, product, items)
-            SpawnCreature("Carrier", client)
-        end
-    },
-
-    {
-        Name = "Spawn as Hammerhead",
+        Name = "Появится как Молотоглав",
         Price = 2500,
         Limit = 2,
         IsLimitGlobal = true,
@@ -251,7 +237,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Fractal Guardian",
+        Name = "Появится как Фрактальный Страж",
         Price = 4900,
         Limit = 1,
         IsLimitGlobal = true,
@@ -264,7 +250,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Giant Spineling",
+        Name = "Появится как Гигансткий Шипостай",
         Price = 20000,
         Limit = 1,
         IsLimitGlobal = true,
@@ -278,7 +264,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Veteran Mudraptor",
+        Name = "Появится как Ветеран Грязевых Рапторов",
         Price = 8000,
         Limit = 2,
         IsLimitGlobal = true,
@@ -292,7 +278,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Latcher",
+        Name = "Появится как Блокиратор",
         Price = 50000,
         Limit = 1,
         IsLimitGlobal = true,
@@ -305,7 +291,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Charybdis",
+        Name = "Появится как Харибда",
         Price = 80000,
         Limit = 1,
         IsLimitGlobal = true,
@@ -318,7 +304,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Peanut",
+        Name = "Появится как Арахис",
         Price = 50,
         Limit = 2,
         IsLimitGlobal = false,
@@ -329,7 +315,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Orange Boy",
+        Name = "Появится как Оранжевый Парень",
         Price = 50,
         Limit = 2,
         IsLimitGlobal = false,
@@ -340,7 +326,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Cthulhu",
+        Name = "Появится как Ктулху",
         Price = 50,
         Limit = 2,
         IsLimitGlobal = false,
@@ -351,7 +337,7 @@ category.Products = {
     },
 
     {
-        Name = "Spawn as Psilotoad",
+        Name = "Появится как Псиложаба",
         Price = 50,
         Limit = 2,
         IsLimitGlobal = false,

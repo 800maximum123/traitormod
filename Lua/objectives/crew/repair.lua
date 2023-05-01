@@ -10,7 +10,7 @@ objective.MinCondition = 20
 function objective:Start(target)
     self.Progress = 0
 
-    self.Text = string.format("Repair (%s/%s) %s that had their condition below %s", self.Progress, self.Amount, self.ItemText, self.MinCondition)
+    self.Text = string.format("Почините(%s/%s) %s . Ее состояние находится ниже %s", self.Progress, self.Amount, self.ItemText, self.MinCondition)
 
     return true
 end
@@ -18,7 +18,7 @@ end
 function objective:StopRepairing(item, character)
     if item.Prefab.Identifier == self.ItemIdentifier and character == self.Character then
         self.Progress = self.Progress + 1
-        self.Text = string.format("Repair (%s/%s) %s that had their condition below %s%%", self.Progress, self.Amount, self.ItemText, self.MinCondition)
+        self.Text = string.format("Почините (%s/%s) %s . Ее состояние находится ниже %s%%", self.Progress, self.Amount, self.ItemText, self.MinCondition)
     end
 end
 

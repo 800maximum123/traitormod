@@ -86,10 +86,10 @@ assassination.GetRoundResult = function ()
             summary = summary .. "\n\n"
         end
 
-        local stats = "Targets killed: %d | Sub objectives: %d"
+        local stats = "Ликвидированные цели: %d | Дополнительные задачи: %d"
         local traitorName = Traitormod.GetJobString(character).. " " .. character.Name
         if traitor.Deaths > 0 then
-            traitorName = traitorName.." (Died)"
+            traitorName = traitorName.." (Погиб)"
         end
 
         summary = (summary or "") .. string.format("> %s\n", traitorName) ..
@@ -97,7 +97,7 @@ assassination.GetRoundResult = function ()
         
         local client = Traitormod.FindClientCharacter(character)
         if client and assassination.AwardedPoints then
-            summary = summary .. string.format(" | Points gained: %d", math.floor(assassination.AwardedPoints[client.SteamID] or 0))
+            summary = summary .. string.format(" | Очков выдано: %d", math.floor(assassination.AwardedPoints[client.SteamID] or 0))
         end
     end
 
@@ -185,7 +185,7 @@ assassination.GetTraitorObjectiveSummary = function (character, roundSummary)
 
     if not assassination.MultiTraitor then
         
-    elseif assassination.Config.TraitorMethodCommunication == "Codewords" then
+    elseif assassination.Config.TraitorMethodCommunication == "Кодовые слова" then
         local codeWords = ""
         local codeResponses = ""
     

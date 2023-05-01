@@ -43,7 +43,7 @@ function role:Greet()
     local objectives = self:ObjectivesToString()
 
     local sb = Traitormod.StringBuilder:new()
-    sb("You are now part of the Children of The Honkmother.\nComplete the objectives given to you to prove yourself worthy.\n\n")
+    sb("Ты теперь часть Сынов Хонкоматери.\nВыполни данные тебе задачи, дабы проверить твою честь.\n\n")
     sb("Your objectives are:\n")
     sb(objectives)
     sb("\n\n")

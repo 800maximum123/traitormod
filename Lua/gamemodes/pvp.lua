@@ -60,7 +60,7 @@ function gm:End()
             end
 
             local points = Traitormod.AwardPoints(client, amount)
-            Traitormod.SendMessage(client, "You have received " .. points .. " points.", "InfoFrameTabButton.Mission")
+            Traitormod.SendMessage(client, "Вы получили " .. points .. " очков.", "InfoFrameTabButton.Mission")
         end
     end
 

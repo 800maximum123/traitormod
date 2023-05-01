@@ -71,7 +71,7 @@ event.Start = function ()
             local interface = item.GetComponentString("CustomInterface")
 
             interface.customInterfaceElementList[1].State = true
-            interface.customInterfaceElementList[2].Signal = "Last known pirate position"
+            interface.customInterfaceElementList[2].Signal = "Последняя известная позиция пиратов"
 
             item.CreateServerEvent(interface, interface)
         end)
@@ -127,7 +127,7 @@ event.Start = function ()
 
     event.ItemReward = character.Inventory.GetItemInLimbSlot(InvSlotType.Card)
 
-    local text = "There have been reports about a notorious pirate with a PUCS suit terrorizing these waters, the pirate was detected recently inside a beacon station - eliminate the pirate to claim a reward of " .. event.AmountPoints .. " points for the entire crew."
+    local text = "Поступали сообщения об известном пирате в костюме PUCS, терроризирующем эти воды. Недавно пират был обнаружен внутри радиомаячной станции - ликвидируйте пирата, чтобы получить награду в размере " .. event.AmountPoints .. " очков для всего экипажа."
     Traitormod.RoundEvents.SendEventMessage(text, "CrewWalletIconLarge")
 
     Traitormod.GhostRoles.Ask("Beacon Pirate", function (client)

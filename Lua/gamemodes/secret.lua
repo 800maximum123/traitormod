@@ -214,11 +214,11 @@ function gm:SelectAntagonists(role)
         if traitorChoices == 0 then
             if Game.ServerSettings.AllowRespawn or MidRoundSpawn then
                 -- if more players to come, retry
-                Traitormod.Debug("Currently no valid player characters to assign traitors. Retrying...")
+                Traitormod.Debug("Сейчас нет действующих персонажей игроков для назначения предателей. Повторная попытка...")
                 this:SelectAntagonists(role)
             else
                 -- else this will never change, abort
-                Traitormod.Log("No players to assign traitors")
+                Traitormod.Log("Нету игроков, дабы назначить их на предателя")
             end
 
             return
@@ -227,7 +227,7 @@ function gm:SelectAntagonists(role)
         local amountTraitors = this.AmountTraitors(playerInGame)
         if amountTraitors > traitorChoices then
             amountTraitors = traitorChoices
-            Traitormod.Log("Not enough valid players to assign all traitors... New amount: " .. tostring(amountTraitors))
+            Traitormod.Log("Недостаточно действительных игроков, чтобы назначить всех предателей... Новое количество: " .. tostring(amountTraitors))
         end
 
         local antagonists = {}
@@ -238,7 +238,7 @@ function gm:SelectAntagonists(role)
 
             if index ~= nil then
                 Traitormod.Log("Chose " ..
-                    index.Character.Name .. " as traitor. Weight: " .. math.floor(clientWeight[index] * 100) / 100)
+                    index.Character.Name .. " прадетелем. Вес: " .. math.floor(clientWeight[index] * 100) / 100)
 
                 table.insert(antagonists, index.Character)
                 table.insert(roles, role:new())
@@ -283,7 +283,7 @@ function gm:Think()
         local delay = self.EndGameDelaySeconds or 0
 
         Traitormod.SendMessageEveryone(Traitormod.Language.TraitorsWin)
-        Traitormod.Log("Secret gamemode complete. Ending round in " .. delay)
+        Traitormod.Log("Секретный режим выполнен. Завершаем раунд в " .. delay)
 
         Timer.Wait(function ()
             Game.EndGame()

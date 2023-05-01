@@ -1,7 +1,7 @@
 local objective = {}
 
-objective.Name = "Objective"
-objective.Text = "Complete the objective!"
+objective.Name = "Задачи"
+objective.Text = "Выполните задачи!"
 objective.AmountPoints = 100
 objective.EndRoundObjective = false
 objective.DontLooseLives = false

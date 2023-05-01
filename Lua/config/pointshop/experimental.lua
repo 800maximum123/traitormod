@@ -1,10 +1,10 @@
 local category = {}
 
-category.Name = "Experimental"
+category.Name = "Экспериментальное"
 
 category.Products = {
     {
-        Name = "Door",
+        Name = "Дверь",
         Price = 400,
         Limit = 4,
         Items = {
@@ -13,7 +13,7 @@ category.Products = {
     },
 
     {
-        Name = "Hatch",
+        Name = "Люк",
         Price = 400,
         Limit = 4,
         Items = {
@@ -31,7 +31,7 @@ category.Products = {
     },
 
     {
-        Name = "Oxygen Generator",
+        Name = "Генератор Кислорода",
         Price = 200,
         Limit = 6,
         Items = {
@@ -40,7 +40,7 @@ category.Products = {
     },
 
     {
-        Name = "Fabricator",
+        Name = "Фабрикатор",
         Price = 230,
         Limit = 4,
         Items = {
@@ -49,7 +49,7 @@ category.Products = {
     },
 
     {
-        Name = "Deconstructor",
+        Name = "Деконструктор",
         Price = 235,
         Limit = 4,
         Items = {
@@ -58,7 +58,7 @@ category.Products = {
     },
 
     {
-        Name = "Medical Fabricator",
+        Name = "Медицинский Фабрикатор",
         Price = 300,
         Limit = 4,
         Items = {
@@ -67,7 +67,7 @@ category.Products = {
     },
 
     {
-        Name = "Research Station",
+        Name = "Научная станция",
         Price = 290,
         Limit = 4,
         Items = {
@@ -76,7 +76,7 @@ category.Products = {
     },
 
     {
-        Name = "Junction Box",
+        Name = "Мусорка",
         Price = 180,
         Limit = 8,
         Items = {
@@ -85,7 +85,7 @@ category.Products = {
     },
 
     {
-        Name = "Battery",
+        Name = "Батарея",
         Price = 300,
         Limit = 6,
         Items = {
@@ -94,7 +94,7 @@ category.Products = {
     },
 
     {
-        Name = "Super Capacitor",
+        Name = "Супер Конденсатор",
         Price = 300,
         Limit = 4,
         Items = {
@@ -103,7 +103,7 @@ category.Products = {
     },
 
     {
-        Name = "Shuttle Engine",
+        Name = "Двигатель Шаттла",
         Price = 400,
         Limit = 3,
         Items = {
@@ -112,7 +112,7 @@ category.Products = {
     },
 
     {
-        Name = "Small Pump",
+        Name = "Маленькая помпа",
         Price = 300,
         Limit = 3,
         Items = {
@@ -121,7 +121,7 @@ category.Products = {
     },
 
     {
-        Name = "Nuclear Reactor",
+        Name = "Ядерный Реактор",
         Price = 1500,
         Limit = 1,
         Items = {
@@ -130,7 +130,7 @@ category.Products = {
     },
 
     {
-        Name = "Navigation Terminal",
+        Name = "Навигационный Терминал",
         Price = 370,
         Limit = 2,
         Items = {
@@ -139,7 +139,7 @@ category.Products = {
     },
 
     {
-        Name = "Camera",
+        Name = "Камера",
         Price = 110,
         Limit = 5,
         Items = {
@@ -148,7 +148,7 @@ category.Products = {
     },
 
     {
-        Name = "Periscope",
+        Name = "Перископ",
         Price = 180,
         Limit = 5,
         Items = {
@@ -157,7 +157,7 @@ category.Products = {
     },
 
     {
-        Name = "Lamp",
+        Name = "Лампа",
         Price = 50,
         Limit = 5,
         Items = {
@@ -171,7 +171,7 @@ category.Products = {
     },
 
     {
-        Name = "Chair",
+        Name = "Стул",
         Price = 25,
         Limit = 5,
         Items = {
@@ -180,7 +180,7 @@ category.Products = {
     },
 
     {
-        Name = "Bunk Beds",
+        Name = "Двухъярусная Кровать",
         Price = 50,
         Limit = 5,
         Items = {
@@ -189,7 +189,7 @@ category.Products = {
     },
 
     {
-        Name = "Wire",
+        Name = "Провода",
         Price = 40,
         Limit = 8,
         Items = {

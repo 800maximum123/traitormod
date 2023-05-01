@@ -55,7 +55,7 @@ event.Start = function ()
 
     local points = math.floor(submarine.RealWorldDepth) * 3
 
-    local text = "Incoming Distress Call... H---! -e-----uck i- --e abys-- W- n--d -e-- A l--her dr---e- us d--- her-. ---se -e a-e of--ring ----thing w- -ave, inclu--- our ---0 -o------"
+    local text = "Входящий Сигнал Бедствия... H---! -e-----uck i- --e abys-- W- n--d -e-- A l--her dr---e- us d--- her-. ---se -e a-e of--ring ----thing w- -ave, inclu--- our ---0 -o------"
     Traitormod.RoundEvents.SendEventMessage(text, "UnlockPathIcon")
 
     Traitormod.RoundEvents.SendEventMessage("The transmission cuts out right after.", "UnlockPathIcon")
@@ -68,7 +68,7 @@ event.Start = function ()
 
         if character.IsDead then
             local failurePoints = points / 2
-            Traitormod.SpawnPointItem(character.Inventory, failurePoints, "I guess that's how it ends....")
+            Traitormod.SpawnPointItem(character.Inventory, failurePoints, "Думаю, так все и закончится....")
 
             event.End()
             character = nil
@@ -79,7 +79,7 @@ event.Start = function ()
         if event.Phase == 2 and character.WorldPosition.Y > Level.Loaded.AbyssStart - 500 and character.CanSpeak then
             event.Phase = 3
 
-            character.Speak("I can't believe we made it out alive, thank you so much! Here are the points I promised, take this cargo scooter and the LogBook inside. The LogBook should contain the points I promised.", nil, 0, '', 0)
+            character.Speak("Не могу поверить, что мы выбрались живыми, спасибо вам большое! Вот очки, которые я обещал, возьмите этот грузовой скутер и журнал внутри. В журнале должны быть обещанные очки.", nil, 0, '', 0)
 
             Entity.Spawner.AddItemToSpawnQueue(ItemPrefab.GetItemPrefab("cargoscooter"), character.Inventory, nil, nil, function (item)
                 Traitormod.SpawnPointItem(item.OwnInventory, points)
@@ -112,10 +112,10 @@ event.Start = function ()
             if value.Character ~= nil and not value.Character.IsDead and value.Character.IsHuman and event.Phase == 1 and Vector2.Distance(value.Character.WorldPosition, character.WorldPosition) < 400 and character.CanSpeak then
                 event.Phase = 2
 
-                character.Speak("Holy shit! Someone came! Thank you so much! Please find a way to get us out here, I'll give you " .. points .. " of my points if you can get me out alive.", nil, 0, '', 0)
+                character.Speak("Срань господня! Кто-то прибыл сюда! Спасибо огромное! Пожалуйста, найдите способ достать нас от сюда! Я дам вам " .. points .. " из моих очков, если вы сможете вытащить меня.", nil, 0, '', 0)
 
                 Timer.Wait(function ()
-                    character.Speak("You could try to get a new battery for this submarine and fix it up.", nil, 0, '', 0)
+                    character.Speak("Ты можешь попробывать достать новую батарею для этой субмарины и починить её.", nil, 0, '', 0)
                 end, 4000)
 
                 break

@@ -1,80 +1,80 @@
 local category = {}
 
-category.Name = "Other"
+category.Name = "Другое"
 
 category.Products = {
     {
-        Name = "Coilgun Ammo",
+        Name = "Ящик с боеприпасами для магнитной пушки",
         Price = 145,
         Limit = 3,
         Items = {"coilgunammobox"}
     },
 
     {
-        Name = "Moloch Shell Fragment",
+        Name = "Фрагмент панциря Молоха",
         Price = 340,
         Limit = 1,
         Items = {"shellshield"}
     },
 
     {
-        Name = "Disposable Diving Suit",
+        Name = "Одноразовый водолазный скафандр",
         Price = 400,
         Limit = 1,
         Items = {"respawndivingsuit"}
     },
 
     {
-        Name = "Diving Mask",
+        Name = "Подводная маска",
         Price = 280,
         Limit = 1,
         Items = {"divingmask"}
     },
 
     {
-        Name = "Bike Horn",
+        Name = "Гудок Хонка",
         Price = 350,
         Limit = 10,
         Items = {"bikehorn"}
     },
 
     {
-        Name = "Guitar",
+        Name = "Гитара",
         Price = 50,
         Limit = 2,
         Items = {"guitar"}
     },
 
     {
-        Name = "Harmonica",
+        Name = "Гармоника",
         Price = 50,
         Limit = 2,
         Items = {"harmonica"}
     },
 
     {
-        Name = "Accordion",
+        Name = "Аккордион",
         Price = 50,
         Limit = 2,
         Items = {"accordion"}
     },
 
     {
-        Name = "Pet Name Tag",
+        Name = "Жетон с именем для животного",
         Price = 30,
         Limit = 5,
         Items = {"petnametag"}
     },
 
     {
-        Name = "Poop",
+        Name = "Дерьмо",
         Price = 10,
         Limit = 16,
         Items = {"poop"},
     },
 
     {
-        Name = "Random Egg",
+        Name = "Случайное яйцо",
         Price = 50,
         Limit = 5,
         Items = {"smallmudraptoregg", "tigerthresheregg", "crawleregg", "peanutegg", "psilotoadegg", "orangeboyegg", "balloonegg"},
@@ -82,7 +82,7 @@ category.Products = {
     },
 
     {
-        Name = "Assistant Bot",
+        Name = "Бот-Ассистент",
         Price = 400,
         Limit = 5,
         Action = function (client, product, items)

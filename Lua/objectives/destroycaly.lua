@@ -16,7 +16,7 @@ function objective:Start(target)
 
     if self.Amount == 0 then return false end
 
-    self.Text = string.format("Deconstruct " .. self.Amount .. " Calyxanide(s).", self.TargetName)
+    self.Text = string.format("Уничтожьте " .. self.Amount .. " штук Каликсанида.", self.TargetName)
 
     return true
 end

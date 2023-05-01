@@ -32,7 +32,7 @@ Traitormod.AddCommand("!tc", function(client, args)
 
         return not clientRole.TraitorBroadcastHearable
     else
-        feedback = "Usage: !tc [Message]"
+        feedback = "Используй: !tc [Сообщение]"
     end
 
     Game.SendDirectChatMessage("", feedback, nil, Traitormod.Config.ChatMessageType, client)
@@ -58,13 +58,13 @@ Traitormod.AddCommand("!tdm", function(client, args)
             end
             if found then
                 Traitormod.SendMessage(found, Traitormod.Language.TraitorDirectMessage .. msg)
-                feedback = string.format("[To %s]: %s", Traitormod.ClientLogName(found), msg)
+                feedback = string.format("[Для %s]: %s", Traitormod.ClientLogName(found), msg)
                 return true
             else
-                feedback = "Name not found."
+                feedback = "Имя не найдено."
             end
         else
-            feedback = "Usage: !tdm [Name] [Message]"
+            feedback = "Используй: !tdm [Имя] [Сообщение]"
         end
     end
 

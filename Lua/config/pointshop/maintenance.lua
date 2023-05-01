@@ -1,45 +1,45 @@
 local category = {}
 
-category.Name = "Maintenance"
+category.Name = "Техническое"
 
 category.Products = {
     {
-        Name = "Screwdriver",
+        Name = "Отвертка",
         Price = 90,
         Limit = 1,
         Items = {"screwdriver"}
     },
 
     {
-        Name = "Wrench",
+        Name = "Гаечный ключ",
         Price = 90,
         Limit = 1,
         Items = {"wrench"}
     },
 
     {
-        Name = "Welding Tool",
+        Name = "Сварка",
         Price = 160,
         Limit = 4,
         Items = {"weldingtool", "weldingfueltank"}
     },
 
     {
-        Name = "Fixfoam Grenade",
+        Name = "Гранаты с Монтажной пеной",
         Price = 190,
         Limit = 4,
         Items = {"fixfoamgrenade", "fixfoamgrenade"}
     },
 
     {
-        Name = "Repair Pack",
+        Name = "Ремнабор",
         Price = 140,
         Limit = 4,
         Items = {"repairpack", "repairpack", "repairpack", "repairpack"}
     },
 
     {
-        Name = "Low Quality Fuel Rod",
+        Name = "Топливные стержни плохого качества.",
         Price = 260,
         Limit = 10,
 

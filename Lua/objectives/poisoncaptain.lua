@@ -12,7 +12,7 @@ function objective:Start(target)
     end
 
     if not self.Character.IsMedic then
-        Traitormod.Debug("PoisonCaptain is only available for medics.")
+        Traitormod.Debug("Отравление Капитана доступно только для медиков.")
         return false
     end
 
